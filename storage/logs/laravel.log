@@ -1,0 +1,812 @@
+[2023-06-13 09:55:24] local.ERROR: require(C:\xampp\htdocs\projectku\routes/auth.php): Failed to open stream: No such file or directory {"exception":"[object] (ErrorException(code: 0): require(C:\\xampp\\htdocs\\projectku\\routes/auth.php): Failed to open stream: No such file or directory at C:\\xampp\\htdocs\\projectku\\routes\\web.php:58)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\HandleExceptions.php(254): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'require(C:\\\\xamp...', 'C:\\\\xampp\\\\htdocs...', 58)
+#1 C:\\xampp\\htdocs\\projectku\\routes\\web.php(58): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->Illuminate\\Foundation\\Bootstrap\\{closure}(2, 'require(C:\\\\xamp...', 'C:\\\\xampp\\\\htdocs...', 58)
+#2 C:\\xampp\\htdocs\\projectku\\routes\\web.php(58): require('C:\\\\xampp\\\\htdocs...')
+#3 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteFileRegistrar.php(35): require('C:\\\\xampp\\\\htdocs...')
+#4 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(504): Illuminate\\Routing\\RouteFileRegistrar->register('C:\\\\xampp\\\\htdocs...')
+#5 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(458): Illuminate\\Routing\\Router->loadRoutes('C:\\\\xampp\\\\htdocs...')
+#6 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteRegistrar.php(192): Illuminate\\Routing\\Router->group(Array, 'C:\\\\xampp\\\\htdocs...')
+#7 C:\\xampp\\htdocs\\projectku\\app\\Providers\\RouteServiceProvider.php(48): Illuminate\\Routing\\RouteRegistrar->group('C:\\\\xampp\\\\htdocs...')
+#8 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): App\\Providers\\RouteServiceProvider->App\\Providers\\{closure}()
+#9 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#10 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(81): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#11 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Object(Closure), Object(Closure))
+#12 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(662): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Object(Closure), Array, NULL)
+#13 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider.php(120): Illuminate\\Container\\Container->call(Object(Closure))
+#14 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider.php(45): Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider->loadRoutes()
+#15 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider->Illuminate\\Foundation\\Support\\Providers\\{closure}()
+#16 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#17 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(81): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#18 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Object(Closure), Object(Closure))
+#19 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(662): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Object(Closure), Array, NULL)
+#20 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\ServiceProvider.php(119): Illuminate\\Container\\Container->call(Object(Closure))
+#21 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1009): Illuminate\\Support\\ServiceProvider->callBootedCallbacks()
+#22 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(987): Illuminate\\Foundation\\Application->bootProvider(Object(App\\Providers\\RouteServiceProvider))
+#23 [internal function]: Illuminate\\Foundation\\Application->Illuminate\\Foundation\\{closure}(Object(App\\Providers\\RouteServiceProvider), 24)
+#24 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(986): array_walk(Array, Object(Closure))
+#25 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\BootProviders.php(17): Illuminate\\Foundation\\Application->boot()
+#26 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(261): Illuminate\\Foundation\\Bootstrap\\BootProviders->bootstrap(Object(Illuminate\\Foundation\\Application))
+#27 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(428): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#28 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(198): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#29 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#30 {main}
+"} 
+[2023-06-13 10:07:52] local.ERROR: Target class [Fruitcake\Cors\HandleCors] does not exist. {"exception":"[object] (Illuminate\\Contracts\\Container\\BindingResolutionException(code: 0): Target class [Fruitcake\\Cors\\HandleCors] does not exist. at C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php:916)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(795): Illuminate\\Container\\Container->build('Fruitcake\\\\Cors\\\\...')
+#1 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(933): Illuminate\\Container\\Container->resolve('Fruitcake\\\\Cors\\\\...', Array, true)
+#2 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(731): Illuminate\\Foundation\\Application->resolve('Fruitcake\\\\Cors\\\\...', Array)
+#3 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(918): Illuminate\\Container\\Container->make('Fruitcake\\\\Cors\\\\...', Array)
+#4 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(169): Illuminate\\Foundation\\Application->make('Fruitcake\\\\Cors\\\\...')
+#5 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#6 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#7 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#8 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#9 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#10 C:\\xampp\\htdocs\\projectku\\public\\index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#11 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\xampp\\\\htdocs...')
+#12 {main}
+
+[previous exception] [object] (ReflectionException(code: -1): Class \"Fruitcake\\Cors\\HandleCors\" does not exist at C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php:914)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(914): ReflectionClass->__construct('Fruitcake\\\\Cors\\\\...')
+#1 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(795): Illuminate\\Container\\Container->build('Fruitcake\\\\Cors\\\\...')
+#2 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(933): Illuminate\\Container\\Container->resolve('Fruitcake\\\\Cors\\\\...', Array, true)
+#3 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(731): Illuminate\\Foundation\\Application->resolve('Fruitcake\\\\Cors\\\\...', Array)
+#4 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(918): Illuminate\\Container\\Container->make('Fruitcake\\\\Cors\\\\...', Array)
+#5 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(169): Illuminate\\Foundation\\Application->make('Fruitcake\\\\Cors\\\\...')
+#6 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#7 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#8 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#9 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#10 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#11 C:\\xampp\\htdocs\\projectku\\public\\index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#12 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\xampp\\\\htdocs...')
+#13 {main}
+"} 
+[2023-06-13 10:07:53] local.ERROR: Target class [Fruitcake\Cors\HandleCors] does not exist. {"exception":"[object] (Illuminate\\Contracts\\Container\\BindingResolutionException(code: 0): Target class [Fruitcake\\Cors\\HandleCors] does not exist. at C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php:916)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(795): Illuminate\\Container\\Container->build('Fruitcake\\\\Cors\\\\...')
+#1 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(933): Illuminate\\Container\\Container->resolve('Fruitcake\\\\Cors\\\\...', Array, true)
+#2 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(731): Illuminate\\Foundation\\Application->resolve('Fruitcake\\\\Cors\\\\...', Array)
+#3 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(918): Illuminate\\Container\\Container->make('Fruitcake\\\\Cors\\\\...', Array)
+#4 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(249): Illuminate\\Foundation\\Application->make('Fruitcake\\\\Cors\\\\...')
+#5 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(213): Illuminate\\Foundation\\Http\\Kernel->terminateMiddleware(Object(Illuminate\\Http\\Request), Object(Illuminate\\Http\\Response))
+#6 C:\\xampp\\htdocs\\projectku\\public\\index.php(55): Illuminate\\Foundation\\Http\\Kernel->terminate(Object(Illuminate\\Http\\Request), Object(Illuminate\\Http\\Response))
+#7 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\xampp\\\\htdocs...')
+#8 {main}
+
+[previous exception] [object] (ReflectionException(code: -1): Class \"Fruitcake\\Cors\\HandleCors\" does not exist at C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php:914)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(914): ReflectionClass->__construct('Fruitcake\\\\Cors\\\\...')
+#1 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(795): Illuminate\\Container\\Container->build('Fruitcake\\\\Cors\\\\...')
+#2 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(933): Illuminate\\Container\\Container->resolve('Fruitcake\\\\Cors\\\\...', Array, true)
+#3 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(731): Illuminate\\Foundation\\Application->resolve('Fruitcake\\\\Cors\\\\...', Array)
+#4 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(918): Illuminate\\Container\\Container->make('Fruitcake\\\\Cors\\\\...', Array)
+#5 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(249): Illuminate\\Foundation\\Application->make('Fruitcake\\\\Cors\\\\...')
+#6 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(213): Illuminate\\Foundation\\Http\\Kernel->terminateMiddleware(Object(Illuminate\\Http\\Request), Object(Illuminate\\Http\\Response))
+#7 C:\\xampp\\htdocs\\projectku\\public\\index.php(55): Illuminate\\Foundation\\Http\\Kernel->terminate(Object(Illuminate\\Http\\Request), Object(Illuminate\\Http\\Response))
+#8 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\xampp\\\\htdocs...')
+#9 {main}
+"} 
+[2023-06-13 10:11:18] local.ERROR: Target class [Fruitcake\Cors\HandleCors] does not exist. {"exception":"[object] (Illuminate\\Contracts\\Container\\BindingResolutionException(code: 0): Target class [Fruitcake\\Cors\\HandleCors] does not exist. at C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php:916)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(795): Illuminate\\Container\\Container->build('Fruitcake\\\\Cors\\\\...')
+#1 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(933): Illuminate\\Container\\Container->resolve('Fruitcake\\\\Cors\\\\...', Array, true)
+#2 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(731): Illuminate\\Foundation\\Application->resolve('Fruitcake\\\\Cors\\\\...', Array)
+#3 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(918): Illuminate\\Container\\Container->make('Fruitcake\\\\Cors\\\\...', Array)
+#4 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(169): Illuminate\\Foundation\\Application->make('Fruitcake\\\\Cors\\\\...')
+#5 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#6 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#7 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#8 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#9 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#10 C:\\xampp\\htdocs\\projectku\\public\\index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#11 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\xampp\\\\htdocs...')
+#12 {main}
+
+[previous exception] [object] (ReflectionException(code: -1): Class \"Fruitcake\\Cors\\HandleCors\" does not exist at C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php:914)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(914): ReflectionClass->__construct('Fruitcake\\\\Cors\\\\...')
+#1 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(795): Illuminate\\Container\\Container->build('Fruitcake\\\\Cors\\\\...')
+#2 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(933): Illuminate\\Container\\Container->resolve('Fruitcake\\\\Cors\\\\...', Array, true)
+#3 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(731): Illuminate\\Foundation\\Application->resolve('Fruitcake\\\\Cors\\\\...', Array)
+#4 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(918): Illuminate\\Container\\Container->make('Fruitcake\\\\Cors\\\\...', Array)
+#5 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(169): Illuminate\\Foundation\\Application->make('Fruitcake\\\\Cors\\\\...')
+#6 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#7 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#8 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#9 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#10 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#11 C:\\xampp\\htdocs\\projectku\\public\\index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#12 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\xampp\\\\htdocs...')
+#13 {main}
+"} 
+[2023-06-13 10:11:18] local.ERROR: Target class [Fruitcake\Cors\HandleCors] does not exist. {"exception":"[object] (Illuminate\\Contracts\\Container\\BindingResolutionException(code: 0): Target class [Fruitcake\\Cors\\HandleCors] does not exist. at C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php:916)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(795): Illuminate\\Container\\Container->build('Fruitcake\\\\Cors\\\\...')
+#1 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(933): Illuminate\\Container\\Container->resolve('Fruitcake\\\\Cors\\\\...', Array, true)
+#2 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(731): Illuminate\\Foundation\\Application->resolve('Fruitcake\\\\Cors\\\\...', Array)
+#3 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(918): Illuminate\\Container\\Container->make('Fruitcake\\\\Cors\\\\...', Array)
+#4 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(249): Illuminate\\Foundation\\Application->make('Fruitcake\\\\Cors\\\\...')
+#5 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(213): Illuminate\\Foundation\\Http\\Kernel->terminateMiddleware(Object(Illuminate\\Http\\Request), Object(Illuminate\\Http\\Response))
+#6 C:\\xampp\\htdocs\\projectku\\public\\index.php(55): Illuminate\\Foundation\\Http\\Kernel->terminate(Object(Illuminate\\Http\\Request), Object(Illuminate\\Http\\Response))
+#7 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\xampp\\\\htdocs...')
+#8 {main}
+
+[previous exception] [object] (ReflectionException(code: -1): Class \"Fruitcake\\Cors\\HandleCors\" does not exist at C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php:914)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(914): ReflectionClass->__construct('Fruitcake\\\\Cors\\\\...')
+#1 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(795): Illuminate\\Container\\Container->build('Fruitcake\\\\Cors\\\\...')
+#2 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(933): Illuminate\\Container\\Container->resolve('Fruitcake\\\\Cors\\\\...', Array, true)
+#3 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(731): Illuminate\\Foundation\\Application->resolve('Fruitcake\\\\Cors\\\\...', Array)
+#4 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(918): Illuminate\\Container\\Container->make('Fruitcake\\\\Cors\\\\...', Array)
+#5 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(249): Illuminate\\Foundation\\Application->make('Fruitcake\\\\Cors\\\\...')
+#6 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(213): Illuminate\\Foundation\\Http\\Kernel->terminateMiddleware(Object(Illuminate\\Http\\Request), Object(Illuminate\\Http\\Response))
+#7 C:\\xampp\\htdocs\\projectku\\public\\index.php(55): Illuminate\\Foundation\\Http\\Kernel->terminate(Object(Illuminate\\Http\\Request), Object(Illuminate\\Http\\Response))
+#8 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\xampp\\\\htdocs...')
+#9 {main}
+"} 
+[2023-06-13 10:12:48] local.ERROR: Target class [Fruitcake\Cors\HandleCors] does not exist. {"exception":"[object] (Illuminate\\Contracts\\Container\\BindingResolutionException(code: 0): Target class [Fruitcake\\Cors\\HandleCors] does not exist. at C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php:916)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(795): Illuminate\\Container\\Container->build('Fruitcake\\\\Cors\\\\...')
+#1 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(933): Illuminate\\Container\\Container->resolve('Fruitcake\\\\Cors\\\\...', Array, true)
+#2 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(731): Illuminate\\Foundation\\Application->resolve('Fruitcake\\\\Cors\\\\...', Array)
+#3 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(918): Illuminate\\Container\\Container->make('Fruitcake\\\\Cors\\\\...', Array)
+#4 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(169): Illuminate\\Foundation\\Application->make('Fruitcake\\\\Cors\\\\...')
+#5 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#6 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#7 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#8 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#9 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#10 C:\\xampp\\htdocs\\projectku\\public\\index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#11 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\xampp\\\\htdocs...')
+#12 {main}
+
+[previous exception] [object] (ReflectionException(code: -1): Class \"Fruitcake\\Cors\\HandleCors\" does not exist at C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php:914)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(914): ReflectionClass->__construct('Fruitcake\\\\Cors\\\\...')
+#1 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(795): Illuminate\\Container\\Container->build('Fruitcake\\\\Cors\\\\...')
+#2 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(933): Illuminate\\Container\\Container->resolve('Fruitcake\\\\Cors\\\\...', Array, true)
+#3 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(731): Illuminate\\Foundation\\Application->resolve('Fruitcake\\\\Cors\\\\...', Array)
+#4 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(918): Illuminate\\Container\\Container->make('Fruitcake\\\\Cors\\\\...', Array)
+#5 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(169): Illuminate\\Foundation\\Application->make('Fruitcake\\\\Cors\\\\...')
+#6 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#7 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#8 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#9 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#10 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#11 C:\\xampp\\htdocs\\projectku\\public\\index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#12 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\xampp\\\\htdocs...')
+#13 {main}
+"} 
+[2023-06-13 10:12:49] local.ERROR: Target class [Fruitcake\Cors\HandleCors] does not exist. {"exception":"[object] (Illuminate\\Contracts\\Container\\BindingResolutionException(code: 0): Target class [Fruitcake\\Cors\\HandleCors] does not exist. at C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php:916)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(795): Illuminate\\Container\\Container->build('Fruitcake\\\\Cors\\\\...')
+#1 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(933): Illuminate\\Container\\Container->resolve('Fruitcake\\\\Cors\\\\...', Array, true)
+#2 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(731): Illuminate\\Foundation\\Application->resolve('Fruitcake\\\\Cors\\\\...', Array)
+#3 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(918): Illuminate\\Container\\Container->make('Fruitcake\\\\Cors\\\\...', Array)
+#4 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(249): Illuminate\\Foundation\\Application->make('Fruitcake\\\\Cors\\\\...')
+#5 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(213): Illuminate\\Foundation\\Http\\Kernel->terminateMiddleware(Object(Illuminate\\Http\\Request), Object(Illuminate\\Http\\Response))
+#6 C:\\xampp\\htdocs\\projectku\\public\\index.php(55): Illuminate\\Foundation\\Http\\Kernel->terminate(Object(Illuminate\\Http\\Request), Object(Illuminate\\Http\\Response))
+#7 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\xampp\\\\htdocs...')
+#8 {main}
+
+[previous exception] [object] (ReflectionException(code: -1): Class \"Fruitcake\\Cors\\HandleCors\" does not exist at C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php:914)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(914): ReflectionClass->__construct('Fruitcake\\\\Cors\\\\...')
+#1 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(795): Illuminate\\Container\\Container->build('Fruitcake\\\\Cors\\\\...')
+#2 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(933): Illuminate\\Container\\Container->resolve('Fruitcake\\\\Cors\\\\...', Array, true)
+#3 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(731): Illuminate\\Foundation\\Application->resolve('Fruitcake\\\\Cors\\\\...', Array)
+#4 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(918): Illuminate\\Container\\Container->make('Fruitcake\\\\Cors\\\\...', Array)
+#5 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(249): Illuminate\\Foundation\\Application->make('Fruitcake\\\\Cors\\\\...')
+#6 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(213): Illuminate\\Foundation\\Http\\Kernel->terminateMiddleware(Object(Illuminate\\Http\\Request), Object(Illuminate\\Http\\Response))
+#7 C:\\xampp\\htdocs\\projectku\\public\\index.php(55): Illuminate\\Foundation\\Http\\Kernel->terminate(Object(Illuminate\\Http\\Request), Object(Illuminate\\Http\\Response))
+#8 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\xampp\\\\htdocs...')
+#9 {main}
+"} 
+[2023-06-13 10:14:24] local.ERROR: Target class [Fruitcake\Cors\HandleCors] does not exist. {"exception":"[object] (Illuminate\\Contracts\\Container\\BindingResolutionException(code: 0): Target class [Fruitcake\\Cors\\HandleCors] does not exist. at C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php:916)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(795): Illuminate\\Container\\Container->build('Fruitcake\\\\Cors\\\\...')
+#1 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(933): Illuminate\\Container\\Container->resolve('Fruitcake\\\\Cors\\\\...', Array, true)
+#2 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(731): Illuminate\\Foundation\\Application->resolve('Fruitcake\\\\Cors\\\\...', Array)
+#3 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(918): Illuminate\\Container\\Container->make('Fruitcake\\\\Cors\\\\...', Array)
+#4 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(169): Illuminate\\Foundation\\Application->make('Fruitcake\\\\Cors\\\\...')
+#5 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#6 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#7 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#8 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#9 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#10 C:\\xampp\\htdocs\\projectku\\public\\index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#11 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\xampp\\\\htdocs...')
+#12 {main}
+
+[previous exception] [object] (ReflectionException(code: -1): Class \"Fruitcake\\Cors\\HandleCors\" does not exist at C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php:914)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(914): ReflectionClass->__construct('Fruitcake\\\\Cors\\\\...')
+#1 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(795): Illuminate\\Container\\Container->build('Fruitcake\\\\Cors\\\\...')
+#2 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(933): Illuminate\\Container\\Container->resolve('Fruitcake\\\\Cors\\\\...', Array, true)
+#3 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(731): Illuminate\\Foundation\\Application->resolve('Fruitcake\\\\Cors\\\\...', Array)
+#4 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(918): Illuminate\\Container\\Container->make('Fruitcake\\\\Cors\\\\...', Array)
+#5 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(169): Illuminate\\Foundation\\Application->make('Fruitcake\\\\Cors\\\\...')
+#6 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#7 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#8 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#9 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#10 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#11 C:\\xampp\\htdocs\\projectku\\public\\index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#12 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\xampp\\\\htdocs...')
+#13 {main}
+"} 
+[2023-06-13 10:14:24] local.ERROR: Target class [Fruitcake\Cors\HandleCors] does not exist. {"exception":"[object] (Illuminate\\Contracts\\Container\\BindingResolutionException(code: 0): Target class [Fruitcake\\Cors\\HandleCors] does not exist. at C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php:916)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(795): Illuminate\\Container\\Container->build('Fruitcake\\\\Cors\\\\...')
+#1 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(933): Illuminate\\Container\\Container->resolve('Fruitcake\\\\Cors\\\\...', Array, true)
+#2 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(731): Illuminate\\Foundation\\Application->resolve('Fruitcake\\\\Cors\\\\...', Array)
+#3 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(918): Illuminate\\Container\\Container->make('Fruitcake\\\\Cors\\\\...', Array)
+#4 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(249): Illuminate\\Foundation\\Application->make('Fruitcake\\\\Cors\\\\...')
+#5 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(213): Illuminate\\Foundation\\Http\\Kernel->terminateMiddleware(Object(Illuminate\\Http\\Request), Object(Illuminate\\Http\\Response))
+#6 C:\\xampp\\htdocs\\projectku\\public\\index.php(55): Illuminate\\Foundation\\Http\\Kernel->terminate(Object(Illuminate\\Http\\Request), Object(Illuminate\\Http\\Response))
+#7 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\xampp\\\\htdocs...')
+#8 {main}
+
+[previous exception] [object] (ReflectionException(code: -1): Class \"Fruitcake\\Cors\\HandleCors\" does not exist at C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php:914)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(914): ReflectionClass->__construct('Fruitcake\\\\Cors\\\\...')
+#1 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(795): Illuminate\\Container\\Container->build('Fruitcake\\\\Cors\\\\...')
+#2 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(933): Illuminate\\Container\\Container->resolve('Fruitcake\\\\Cors\\\\...', Array, true)
+#3 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(731): Illuminate\\Foundation\\Application->resolve('Fruitcake\\\\Cors\\\\...', Array)
+#4 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(918): Illuminate\\Container\\Container->make('Fruitcake\\\\Cors\\\\...', Array)
+#5 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(249): Illuminate\\Foundation\\Application->make('Fruitcake\\\\Cors\\\\...')
+#6 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(213): Illuminate\\Foundation\\Http\\Kernel->terminateMiddleware(Object(Illuminate\\Http\\Request), Object(Illuminate\\Http\\Response))
+#7 C:\\xampp\\htdocs\\projectku\\public\\index.php(55): Illuminate\\Foundation\\Http\\Kernel->terminate(Object(Illuminate\\Http\\Request), Object(Illuminate\\Http\\Response))
+#8 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\xampp\\\\htdocs...')
+#9 {main}
+"} 
+[2023-06-13 10:20:14] local.ERROR: Target class [Fruitcake\Cors\HandleCors] does not exist. {"exception":"[object] (Illuminate\\Contracts\\Container\\BindingResolutionException(code: 0): Target class [Fruitcake\\Cors\\HandleCors] does not exist. at C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php:916)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(795): Illuminate\\Container\\Container->build('Fruitcake\\\\Cors\\\\...')
+#1 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(933): Illuminate\\Container\\Container->resolve('Fruitcake\\\\Cors\\\\...', Array, true)
+#2 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(731): Illuminate\\Foundation\\Application->resolve('Fruitcake\\\\Cors\\\\...', Array)
+#3 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(918): Illuminate\\Container\\Container->make('Fruitcake\\\\Cors\\\\...', Array)
+#4 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(169): Illuminate\\Foundation\\Application->make('Fruitcake\\\\Cors\\\\...')
+#5 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#6 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#7 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#8 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#9 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#10 C:\\xampp\\htdocs\\projectku\\public\\index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#11 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\xampp\\\\htdocs...')
+#12 {main}
+
+[previous exception] [object] (ReflectionException(code: -1): Class \"Fruitcake\\Cors\\HandleCors\" does not exist at C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php:914)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(914): ReflectionClass->__construct('Fruitcake\\\\Cors\\\\...')
+#1 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(795): Illuminate\\Container\\Container->build('Fruitcake\\\\Cors\\\\...')
+#2 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(933): Illuminate\\Container\\Container->resolve('Fruitcake\\\\Cors\\\\...', Array, true)
+#3 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(731): Illuminate\\Foundation\\Application->resolve('Fruitcake\\\\Cors\\\\...', Array)
+#4 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(918): Illuminate\\Container\\Container->make('Fruitcake\\\\Cors\\\\...', Array)
+#5 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(169): Illuminate\\Foundation\\Application->make('Fruitcake\\\\Cors\\\\...')
+#6 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#7 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#8 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#9 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#10 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#11 C:\\xampp\\htdocs\\projectku\\public\\index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#12 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\xampp\\\\htdocs...')
+#13 {main}
+"} 
+[2023-06-13 10:20:14] local.ERROR: Target class [Fruitcake\Cors\HandleCors] does not exist. {"exception":"[object] (Illuminate\\Contracts\\Container\\BindingResolutionException(code: 0): Target class [Fruitcake\\Cors\\HandleCors] does not exist. at C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php:916)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(795): Illuminate\\Container\\Container->build('Fruitcake\\\\Cors\\\\...')
+#1 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(933): Illuminate\\Container\\Container->resolve('Fruitcake\\\\Cors\\\\...', Array, true)
+#2 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(731): Illuminate\\Foundation\\Application->resolve('Fruitcake\\\\Cors\\\\...', Array)
+#3 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(918): Illuminate\\Container\\Container->make('Fruitcake\\\\Cors\\\\...', Array)
+#4 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(249): Illuminate\\Foundation\\Application->make('Fruitcake\\\\Cors\\\\...')
+#5 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(213): Illuminate\\Foundation\\Http\\Kernel->terminateMiddleware(Object(Illuminate\\Http\\Request), Object(Illuminate\\Http\\Response))
+#6 C:\\xampp\\htdocs\\projectku\\public\\index.php(55): Illuminate\\Foundation\\Http\\Kernel->terminate(Object(Illuminate\\Http\\Request), Object(Illuminate\\Http\\Response))
+#7 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\xampp\\\\htdocs...')
+#8 {main}
+
+[previous exception] [object] (ReflectionException(code: -1): Class \"Fruitcake\\Cors\\HandleCors\" does not exist at C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php:914)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(914): ReflectionClass->__construct('Fruitcake\\\\Cors\\\\...')
+#1 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(795): Illuminate\\Container\\Container->build('Fruitcake\\\\Cors\\\\...')
+#2 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(933): Illuminate\\Container\\Container->resolve('Fruitcake\\\\Cors\\\\...', Array, true)
+#3 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(731): Illuminate\\Foundation\\Application->resolve('Fruitcake\\\\Cors\\\\...', Array)
+#4 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(918): Illuminate\\Container\\Container->make('Fruitcake\\\\Cors\\\\...', Array)
+#5 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(249): Illuminate\\Foundation\\Application->make('Fruitcake\\\\Cors\\\\...')
+#6 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(213): Illuminate\\Foundation\\Http\\Kernel->terminateMiddleware(Object(Illuminate\\Http\\Request), Object(Illuminate\\Http\\Response))
+#7 C:\\xampp\\htdocs\\projectku\\public\\index.php(55): Illuminate\\Foundation\\Http\\Kernel->terminate(Object(Illuminate\\Http\\Request), Object(Illuminate\\Http\\Response))
+#8 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\xampp\\\\htdocs...')
+#9 {main}
+"} 
+[2023-06-13 10:22:41] local.ERROR: During class fetch: Uncaught ErrorException: include(C:\xampp\htdocs\projectku\vendor\composer/../laravel/framework/src/Illuminate/Foundation/Concerns/ResolvesDumpSource.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\projectku\vendor\composer\ClassLoader.php:582
+Stack trace:
+#0 C:\xampp\htdocs\projectku\vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\HandleExceptions.php(254): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'include(C:\\xamp...', 'C:\\xampp\\htdocs...', 582)
+#1 C:\xampp\htdocs\projectku\vendor\composer\ClassLoader.php(582): Illuminate\Foundation\Bootstrap\HandleExceptions->Illuminate\Foundation\Bootstrap\{closure}(2, 'include(C:\\xamp...', 'C:\\xampp\\htdocs...', 582)
+#2 C:\xampp\htdocs\projectku\vendor\composer\ClassLoader.php(582): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\projectku\vendor\composer\ClassLoader.php(433): Composer\Autoload\{closure}('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\projectku\vendor\laravel\framework\src\Illuminate\Foundation\Console\CliDumper.php(13): Composer\Autoload\ClassLoader->loadClass('Illuminate\\Foun...')
+#5 C:\xampp\htdocs\projectku\vendor\composer\ClassLoader.php(582): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\projectku\vendor\composer\ClassLoader.php(433): Composer\Autoload\{closure}('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\projectku\vendor\laravel\framework\src\Illuminate\Foundation\Providers\FoundationServiceProvider.php(101): Composer\Autoload\ClassLoader->loadClass('Illuminate\\Foun...')
+#8 C:\xampp\htdocs\projectku\vendor\laravel\framework\src\Illuminate\Foundation\Providers\FoundationServiceProvider.php(70): Illuminate\Foundation\Providers\FoundationServiceProvider->registerDumper()
+#9 C:\xampp\htdocs\projectku\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(764): Illuminate\Foundation\Providers\FoundationServiceProvider->register()
+#10 C:\xampp\htdocs\projectku\vendor\laravel\framework\src\Illuminate\Foundation\ProviderRepository.php(75): Illuminate\Foundation\Application->register(Object(Illuminate\Foundation\Providers\FoundationServiceProvider))
+#11 C:\xampp\htdocs\projectku\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(741): Illuminate\Foundation\ProviderRepository->load(Array)
+#12 C:\xampp\htdocs\projectku\vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\RegisterProviders.php(17): Illuminate\Foundation\Application->registerConfiguredProviders()
+#13 C:\xampp\htdocs\projectku\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(261): Illuminate\Foundation\Bootstrap\RegisterProviders->bootstrap(Object(Illuminate\Foundation\Application))
+#14 C:\xampp\htdocs\projectku\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php(428): Illuminate\Foundation\Application->bootstrapWith(Array)
+#15 C:\xampp\htdocs\projectku\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php(198): Illuminate\Foundation\Console\Kernel->bootstrap()
+#16 C:\xampp\htdocs\projectku\artisan(35): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 {main} {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): During class fetch: Uncaught ErrorException: include(C:\\xampp\\htdocs\\projectku\\vendor\\composer/../laravel/framework/src/Illuminate/Foundation/Concerns/ResolvesDumpSource.php): Failed to open stream: No such file or directory in C:\\xampp\\htdocs\\projectku\\vendor\\composer\\ClassLoader.php:582
+Stack trace:
+#0 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\HandleExceptions.php(254): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'include(C:\\\\xamp...', 'C:\\\\xampp\\\\htdocs...', 582)
+#1 C:\\xampp\\htdocs\\projectku\\vendor\\composer\\ClassLoader.php(582): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->Illuminate\\Foundation\\Bootstrap\\{closure}(2, 'include(C:\\\\xamp...', 'C:\\\\xampp\\\\htdocs...', 582)
+#2 C:\\xampp\\htdocs\\projectku\\vendor\\composer\\ClassLoader.php(582): include('C:\\\\xampp\\\\htdocs...')
+#3 C:\\xampp\\htdocs\\projectku\\vendor\\composer\\ClassLoader.php(433): Composer\\Autoload\\{closure}('C:\\\\xampp\\\\htdocs...')
+#4 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\CliDumper.php(13): Composer\\Autoload\\ClassLoader->loadClass('Illuminate\\\\Foun...')
+#5 C:\\xampp\\htdocs\\projectku\\vendor\\composer\\ClassLoader.php(582): include('C:\\\\xampp\\\\htdocs...')
+#6 C:\\xampp\\htdocs\\projectku\\vendor\\composer\\ClassLoader.php(433): Composer\\Autoload\\{closure}('C:\\\\xampp\\\\htdocs...')
+#7 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Providers\\FoundationServiceProvider.php(101): Composer\\Autoload\\ClassLoader->loadClass('Illuminate\\\\Foun...')
+#8 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Providers\\FoundationServiceProvider.php(70): Illuminate\\Foundation\\Providers\\FoundationServiceProvider->registerDumper()
+#9 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(764): Illuminate\\Foundation\\Providers\\FoundationServiceProvider->register()
+#10 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\ProviderRepository.php(75): Illuminate\\Foundation\\Application->register(Object(Illuminate\\Foundation\\Providers\\FoundationServiceProvider))
+#11 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(741): Illuminate\\Foundation\\ProviderRepository->load(Array)
+#12 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\RegisterProviders.php(17): Illuminate\\Foundation\\Application->registerConfiguredProviders()
+#13 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(261): Illuminate\\Foundation\\Bootstrap\\RegisterProviders->bootstrap(Object(Illuminate\\Foundation\\Application))
+#14 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(428): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#15 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(198): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#16 C:\\xampp\\htdocs\\projectku\\artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#17 {main} at C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\CliDumper.php:13)
+[stacktrace]
+#0 {main}
+"} 
+[2023-06-13 10:23:38] local.ERROR: During class fetch: Uncaught ErrorException: include(C:\xampp\htdocs\projectku\vendor\composer/../laravel/framework/src/Illuminate/Foundation/Concerns/ResolvesDumpSource.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\projectku\vendor\composer\ClassLoader.php:582
+Stack trace:
+#0 C:\xampp\htdocs\projectku\vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\HandleExceptions.php(254): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'include(C:\\xamp...', 'C:\\xampp\\htdocs...', 582)
+#1 C:\xampp\htdocs\projectku\vendor\composer\ClassLoader.php(582): Illuminate\Foundation\Bootstrap\HandleExceptions->Illuminate\Foundation\Bootstrap\{closure}(2, 'include(C:\\xamp...', 'C:\\xampp\\htdocs...', 582)
+#2 C:\xampp\htdocs\projectku\vendor\composer\ClassLoader.php(582): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\projectku\vendor\composer\ClassLoader.php(433): Composer\Autoload\{closure}('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\projectku\vendor\laravel\framework\src\Illuminate\Foundation\Console\CliDumper.php(13): Composer\Autoload\ClassLoader->loadClass('Illuminate\\Foun...')
+#5 C:\xampp\htdocs\projectku\vendor\composer\ClassLoader.php(582): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\projectku\vendor\composer\ClassLoader.php(433): Composer\Autoload\{closure}('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\projectku\vendor\laravel\framework\src\Illuminate\Foundation\Providers\FoundationServiceProvider.php(101): Composer\Autoload\ClassLoader->loadClass('Illuminate\\Foun...')
+#8 C:\xampp\htdocs\projectku\vendor\laravel\framework\src\Illuminate\Foundation\Providers\FoundationServiceProvider.php(70): Illuminate\Foundation\Providers\FoundationServiceProvider->registerDumper()
+#9 C:\xampp\htdocs\projectku\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(764): Illuminate\Foundation\Providers\FoundationServiceProvider->register()
+#10 C:\xampp\htdocs\projectku\vendor\laravel\framework\src\Illuminate\Foundation\ProviderRepository.php(75): Illuminate\Foundation\Application->register(Object(Illuminate\Foundation\Providers\FoundationServiceProvider))
+#11 C:\xampp\htdocs\projectku\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(741): Illuminate\Foundation\ProviderRepository->load(Array)
+#12 C:\xampp\htdocs\projectku\vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\RegisterProviders.php(17): Illuminate\Foundation\Application->registerConfiguredProviders()
+#13 C:\xampp\htdocs\projectku\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(261): Illuminate\Foundation\Bootstrap\RegisterProviders->bootstrap(Object(Illuminate\Foundation\Application))
+#14 C:\xampp\htdocs\projectku\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php(428): Illuminate\Foundation\Application->bootstrapWith(Array)
+#15 C:\xampp\htdocs\projectku\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php(198): Illuminate\Foundation\Console\Kernel->bootstrap()
+#16 Command line code(1): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 {main} {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): During class fetch: Uncaught ErrorException: include(C:\\xampp\\htdocs\\projectku\\vendor\\composer/../laravel/framework/src/Illuminate/Foundation/Concerns/ResolvesDumpSource.php): Failed to open stream: No such file or directory in C:\\xampp\\htdocs\\projectku\\vendor\\composer\\ClassLoader.php:582
+Stack trace:
+#0 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\HandleExceptions.php(254): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'include(C:\\\\xamp...', 'C:\\\\xampp\\\\htdocs...', 582)
+#1 C:\\xampp\\htdocs\\projectku\\vendor\\composer\\ClassLoader.php(582): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->Illuminate\\Foundation\\Bootstrap\\{closure}(2, 'include(C:\\\\xamp...', 'C:\\\\xampp\\\\htdocs...', 582)
+#2 C:\\xampp\\htdocs\\projectku\\vendor\\composer\\ClassLoader.php(582): include('C:\\\\xampp\\\\htdocs...')
+#3 C:\\xampp\\htdocs\\projectku\\vendor\\composer\\ClassLoader.php(433): Composer\\Autoload\\{closure}('C:\\\\xampp\\\\htdocs...')
+#4 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\CliDumper.php(13): Composer\\Autoload\\ClassLoader->loadClass('Illuminate\\\\Foun...')
+#5 C:\\xampp\\htdocs\\projectku\\vendor\\composer\\ClassLoader.php(582): include('C:\\\\xampp\\\\htdocs...')
+#6 C:\\xampp\\htdocs\\projectku\\vendor\\composer\\ClassLoader.php(433): Composer\\Autoload\\{closure}('C:\\\\xampp\\\\htdocs...')
+#7 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Providers\\FoundationServiceProvider.php(101): Composer\\Autoload\\ClassLoader->loadClass('Illuminate\\\\Foun...')
+#8 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Providers\\FoundationServiceProvider.php(70): Illuminate\\Foundation\\Providers\\FoundationServiceProvider->registerDumper()
+#9 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(764): Illuminate\\Foundation\\Providers\\FoundationServiceProvider->register()
+#10 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\ProviderRepository.php(75): Illuminate\\Foundation\\Application->register(Object(Illuminate\\Foundation\\Providers\\FoundationServiceProvider))
+#11 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(741): Illuminate\\Foundation\\ProviderRepository->load(Array)
+#12 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\RegisterProviders.php(17): Illuminate\\Foundation\\Application->registerConfiguredProviders()
+#13 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(261): Illuminate\\Foundation\\Bootstrap\\RegisterProviders->bootstrap(Object(Illuminate\\Foundation\\Application))
+#14 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(428): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#15 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(198): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#16 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#17 {main} at C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\CliDumper.php:13)
+[stacktrace]
+#0 {main}
+"} 
+[2023-06-13 10:24:13] local.ERROR: During class fetch: Uncaught ErrorException: include(C:\xampp\htdocs\projectku\vendor\composer/../laravel/framework/src/Illuminate/Foundation/Concerns/ResolvesDumpSource.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\projectku\vendor\composer\ClassLoader.php:582
+Stack trace:
+#0 C:\xampp\htdocs\projectku\vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\HandleExceptions.php(254): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'include(C:\\xamp...', 'C:\\xampp\\htdocs...', 582)
+#1 C:\xampp\htdocs\projectku\vendor\composer\ClassLoader.php(582): Illuminate\Foundation\Bootstrap\HandleExceptions->Illuminate\Foundation\Bootstrap\{closure}(2, 'include(C:\\xamp...', 'C:\\xampp\\htdocs...', 582)
+#2 C:\xampp\htdocs\projectku\vendor\composer\ClassLoader.php(582): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\projectku\vendor\composer\ClassLoader.php(433): Composer\Autoload\{closure}('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\projectku\vendor\laravel\framework\src\Illuminate\Foundation\Console\CliDumper.php(13): Composer\Autoload\ClassLoader->loadClass('Illuminate\\Foun...')
+#5 C:\xampp\htdocs\projectku\vendor\composer\ClassLoader.php(582): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\projectku\vendor\composer\ClassLoader.php(433): Composer\Autoload\{closure}('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\projectku\vendor\laravel\framework\src\Illuminate\Foundation\Providers\FoundationServiceProvider.php(101): Composer\Autoload\ClassLoader->loadClass('Illuminate\\Foun...')
+#8 C:\xampp\htdocs\projectku\vendor\laravel\framework\src\Illuminate\Foundation\Providers\FoundationServiceProvider.php(70): Illuminate\Foundation\Providers\FoundationServiceProvider->registerDumper()
+#9 C:\xampp\htdocs\projectku\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(764): Illuminate\Foundation\Providers\FoundationServiceProvider->register()
+#10 C:\xampp\htdocs\projectku\vendor\laravel\framework\src\Illuminate\Foundation\ProviderRepository.php(75): Illuminate\Foundation\Application->register(Object(Illuminate\Foundation\Providers\FoundationServiceProvider))
+#11 C:\xampp\htdocs\projectku\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(741): Illuminate\Foundation\ProviderRepository->load(Array)
+#12 C:\xampp\htdocs\projectku\vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\RegisterProviders.php(17): Illuminate\Foundation\Application->registerConfiguredProviders()
+#13 C:\xampp\htdocs\projectku\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(261): Illuminate\Foundation\Bootstrap\RegisterProviders->bootstrap(Object(Illuminate\Foundation\Application))
+#14 C:\xampp\htdocs\projectku\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php(428): Illuminate\Foundation\Application->bootstrapWith(Array)
+#15 C:\xampp\htdocs\projectku\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php(198): Illuminate\Foundation\Console\Kernel->bootstrap()
+#16 C:\xampp\htdocs\projectku\artisan(35): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 {main} {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): During class fetch: Uncaught ErrorException: include(C:\\xampp\\htdocs\\projectku\\vendor\\composer/../laravel/framework/src/Illuminate/Foundation/Concerns/ResolvesDumpSource.php): Failed to open stream: No such file or directory in C:\\xampp\\htdocs\\projectku\\vendor\\composer\\ClassLoader.php:582
+Stack trace:
+#0 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\HandleExceptions.php(254): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'include(C:\\\\xamp...', 'C:\\\\xampp\\\\htdocs...', 582)
+#1 C:\\xampp\\htdocs\\projectku\\vendor\\composer\\ClassLoader.php(582): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->Illuminate\\Foundation\\Bootstrap\\{closure}(2, 'include(C:\\\\xamp...', 'C:\\\\xampp\\\\htdocs...', 582)
+#2 C:\\xampp\\htdocs\\projectku\\vendor\\composer\\ClassLoader.php(582): include('C:\\\\xampp\\\\htdocs...')
+#3 C:\\xampp\\htdocs\\projectku\\vendor\\composer\\ClassLoader.php(433): Composer\\Autoload\\{closure}('C:\\\\xampp\\\\htdocs...')
+#4 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\CliDumper.php(13): Composer\\Autoload\\ClassLoader->loadClass('Illuminate\\\\Foun...')
+#5 C:\\xampp\\htdocs\\projectku\\vendor\\composer\\ClassLoader.php(582): include('C:\\\\xampp\\\\htdocs...')
+#6 C:\\xampp\\htdocs\\projectku\\vendor\\composer\\ClassLoader.php(433): Composer\\Autoload\\{closure}('C:\\\\xampp\\\\htdocs...')
+#7 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Providers\\FoundationServiceProvider.php(101): Composer\\Autoload\\ClassLoader->loadClass('Illuminate\\\\Foun...')
+#8 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Providers\\FoundationServiceProvider.php(70): Illuminate\\Foundation\\Providers\\FoundationServiceProvider->registerDumper()
+#9 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(764): Illuminate\\Foundation\\Providers\\FoundationServiceProvider->register()
+#10 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\ProviderRepository.php(75): Illuminate\\Foundation\\Application->register(Object(Illuminate\\Foundation\\Providers\\FoundationServiceProvider))
+#11 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(741): Illuminate\\Foundation\\ProviderRepository->load(Array)
+#12 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\RegisterProviders.php(17): Illuminate\\Foundation\\Application->registerConfiguredProviders()
+#13 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(261): Illuminate\\Foundation\\Bootstrap\\RegisterProviders->bootstrap(Object(Illuminate\\Foundation\\Application))
+#14 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(428): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#15 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(198): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#16 C:\\xampp\\htdocs\\projectku\\artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#17 {main} at C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\CliDumper.php:13)
+[stacktrace]
+#0 {main}
+"} 
+[2023-06-13 10:26:12] local.ERROR: During class fetch: Uncaught ErrorException: include(C:\xampp\htdocs\projectku\vendor\composer/../laravel/framework/src/Illuminate/Foundation/Concerns/ResolvesDumpSource.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\projectku\vendor\composer\ClassLoader.php:582
+Stack trace:
+#0 C:\xampp\htdocs\projectku\vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\HandleExceptions.php(254): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'include(C:\\xamp...', 'C:\\xampp\\htdocs...', 582)
+#1 C:\xampp\htdocs\projectku\vendor\composer\ClassLoader.php(582): Illuminate\Foundation\Bootstrap\HandleExceptions->Illuminate\Foundation\Bootstrap\{closure}(2, 'include(C:\\xamp...', 'C:\\xampp\\htdocs...', 582)
+#2 C:\xampp\htdocs\projectku\vendor\composer\ClassLoader.php(582): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\projectku\vendor\composer\ClassLoader.php(433): Composer\Autoload\{closure}('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\projectku\vendor\laravel\framework\src\Illuminate\Foundation\Console\CliDumper.php(13): Composer\Autoload\ClassLoader->loadClass('Illuminate\\Foun...')
+#5 C:\xampp\htdocs\projectku\vendor\composer\ClassLoader.php(582): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\projectku\vendor\composer\ClassLoader.php(433): Composer\Autoload\{closure}('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\projectku\vendor\laravel\framework\src\Illuminate\Foundation\Providers\FoundationServiceProvider.php(101): Composer\Autoload\ClassLoader->loadClass('Illuminate\\Foun...')
+#8 C:\xampp\htdocs\projectku\vendor\laravel\framework\src\Illuminate\Foundation\Providers\FoundationServiceProvider.php(70): Illuminate\Foundation\Providers\FoundationServiceProvider->registerDumper()
+#9 C:\xampp\htdocs\projectku\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(764): Illuminate\Foundation\Providers\FoundationServiceProvider->register()
+#10 C:\xampp\htdocs\projectku\vendor\laravel\framework\src\Illuminate\Foundation\ProviderRepository.php(75): Illuminate\Foundation\Application->register(Object(Illuminate\Foundation\Providers\FoundationServiceProvider))
+#11 C:\xampp\htdocs\projectku\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(741): Illuminate\Foundation\ProviderRepository->load(Array)
+#12 C:\xampp\htdocs\projectku\vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\RegisterProviders.php(17): Illuminate\Foundation\Application->registerConfiguredProviders()
+#13 C:\xampp\htdocs\projectku\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(261): Illuminate\Foundation\Bootstrap\RegisterProviders->bootstrap(Object(Illuminate\Foundation\Application))
+#14 C:\xampp\htdocs\projectku\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php(428): Illuminate\Foundation\Application->bootstrapWith(Array)
+#15 C:\xampp\htdocs\projectku\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php(198): Illuminate\Foundation\Console\Kernel->bootstrap()
+#16 C:\xampp\htdocs\projectku\artisan(35): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 {main} {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): During class fetch: Uncaught ErrorException: include(C:\\xampp\\htdocs\\projectku\\vendor\\composer/../laravel/framework/src/Illuminate/Foundation/Concerns/ResolvesDumpSource.php): Failed to open stream: No such file or directory in C:\\xampp\\htdocs\\projectku\\vendor\\composer\\ClassLoader.php:582
+Stack trace:
+#0 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\HandleExceptions.php(254): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'include(C:\\\\xamp...', 'C:\\\\xampp\\\\htdocs...', 582)
+#1 C:\\xampp\\htdocs\\projectku\\vendor\\composer\\ClassLoader.php(582): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->Illuminate\\Foundation\\Bootstrap\\{closure}(2, 'include(C:\\\\xamp...', 'C:\\\\xampp\\\\htdocs...', 582)
+#2 C:\\xampp\\htdocs\\projectku\\vendor\\composer\\ClassLoader.php(582): include('C:\\\\xampp\\\\htdocs...')
+#3 C:\\xampp\\htdocs\\projectku\\vendor\\composer\\ClassLoader.php(433): Composer\\Autoload\\{closure}('C:\\\\xampp\\\\htdocs...')
+#4 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\CliDumper.php(13): Composer\\Autoload\\ClassLoader->loadClass('Illuminate\\\\Foun...')
+#5 C:\\xampp\\htdocs\\projectku\\vendor\\composer\\ClassLoader.php(582): include('C:\\\\xampp\\\\htdocs...')
+#6 C:\\xampp\\htdocs\\projectku\\vendor\\composer\\ClassLoader.php(433): Composer\\Autoload\\{closure}('C:\\\\xampp\\\\htdocs...')
+#7 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Providers\\FoundationServiceProvider.php(101): Composer\\Autoload\\ClassLoader->loadClass('Illuminate\\\\Foun...')
+#8 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Providers\\FoundationServiceProvider.php(70): Illuminate\\Foundation\\Providers\\FoundationServiceProvider->registerDumper()
+#9 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(764): Illuminate\\Foundation\\Providers\\FoundationServiceProvider->register()
+#10 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\ProviderRepository.php(75): Illuminate\\Foundation\\Application->register(Object(Illuminate\\Foundation\\Providers\\FoundationServiceProvider))
+#11 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(741): Illuminate\\Foundation\\ProviderRepository->load(Array)
+#12 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\RegisterProviders.php(17): Illuminate\\Foundation\\Application->registerConfiguredProviders()
+#13 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(261): Illuminate\\Foundation\\Bootstrap\\RegisterProviders->bootstrap(Object(Illuminate\\Foundation\\Application))
+#14 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(428): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#15 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(198): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#16 C:\\xampp\\htdocs\\projectku\\artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#17 {main} at C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\CliDumper.php:13)
+[stacktrace]
+#0 {main}
+"} 
+[2023-06-13 10:36:02] local.ERROR: During class fetch: Uncaught ErrorException: include(C:\xampp\htdocs\projectku\vendor\composer/../laravel/framework/src/Illuminate/Foundation/Concerns/ResolvesDumpSource.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\projectku\vendor\composer\ClassLoader.php:582
+Stack trace:
+#0 C:\xampp\htdocs\projectku\vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\HandleExceptions.php(254): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'include(C:\\xamp...', 'C:\\xampp\\htdocs...', 582)
+#1 C:\xampp\htdocs\projectku\vendor\composer\ClassLoader.php(582): Illuminate\Foundation\Bootstrap\HandleExceptions->Illuminate\Foundation\Bootstrap\{closure}(2, 'include(C:\\xamp...', 'C:\\xampp\\htdocs...', 582)
+#2 C:\xampp\htdocs\projectku\vendor\composer\ClassLoader.php(582): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\projectku\vendor\composer\ClassLoader.php(433): Composer\Autoload\{closure}('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\projectku\vendor\laravel\framework\src\Illuminate\Foundation\Console\CliDumper.php(13): Composer\Autoload\ClassLoader->loadClass('Illuminate\\Foun...')
+#5 C:\xampp\htdocs\projectku\vendor\composer\ClassLoader.php(582): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\projectku\vendor\composer\ClassLoader.php(433): Composer\Autoload\{closure}('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\projectku\vendor\laravel\framework\src\Illuminate\Foundation\Providers\FoundationServiceProvider.php(101): Composer\Autoload\ClassLoader->loadClass('Illuminate\\Foun...')
+#8 C:\xampp\htdocs\projectku\vendor\laravel\framework\src\Illuminate\Foundation\Providers\FoundationServiceProvider.php(70): Illuminate\Foundation\Providers\FoundationServiceProvider->registerDumper()
+#9 C:\xampp\htdocs\projectku\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(764): Illuminate\Foundation\Providers\FoundationServiceProvider->register()
+#10 C:\xampp\htdocs\projectku\vendor\laravel\framework\src\Illuminate\Foundation\ProviderRepository.php(75): Illuminate\Foundation\Application->register(Object(Illuminate\Foundation\Providers\FoundationServiceProvider))
+#11 C:\xampp\htdocs\projectku\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(741): Illuminate\Foundation\ProviderRepository->load(Array)
+#12 C:\xampp\htdocs\projectku\vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\RegisterProviders.php(17): Illuminate\Foundation\Application->registerConfiguredProviders()
+#13 C:\xampp\htdocs\projectku\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(261): Illuminate\Foundation\Bootstrap\RegisterProviders->bootstrap(Object(Illuminate\Foundation\Application))
+#14 C:\xampp\htdocs\projectku\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php(428): Illuminate\Foundation\Application->bootstrapWith(Array)
+#15 C:\xampp\htdocs\projectku\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php(198): Illuminate\Foundation\Console\Kernel->bootstrap()
+#16 C:\xampp\htdocs\projectku\artisan(35): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 {main} {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): During class fetch: Uncaught ErrorException: include(C:\\xampp\\htdocs\\projectku\\vendor\\composer/../laravel/framework/src/Illuminate/Foundation/Concerns/ResolvesDumpSource.php): Failed to open stream: No such file or directory in C:\\xampp\\htdocs\\projectku\\vendor\\composer\\ClassLoader.php:582
+Stack trace:
+#0 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\HandleExceptions.php(254): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'include(C:\\\\xamp...', 'C:\\\\xampp\\\\htdocs...', 582)
+#1 C:\\xampp\\htdocs\\projectku\\vendor\\composer\\ClassLoader.php(582): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->Illuminate\\Foundation\\Bootstrap\\{closure}(2, 'include(C:\\\\xamp...', 'C:\\\\xampp\\\\htdocs...', 582)
+#2 C:\\xampp\\htdocs\\projectku\\vendor\\composer\\ClassLoader.php(582): include('C:\\\\xampp\\\\htdocs...')
+#3 C:\\xampp\\htdocs\\projectku\\vendor\\composer\\ClassLoader.php(433): Composer\\Autoload\\{closure}('C:\\\\xampp\\\\htdocs...')
+#4 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\CliDumper.php(13): Composer\\Autoload\\ClassLoader->loadClass('Illuminate\\\\Foun...')
+#5 C:\\xampp\\htdocs\\projectku\\vendor\\composer\\ClassLoader.php(582): include('C:\\\\xampp\\\\htdocs...')
+#6 C:\\xampp\\htdocs\\projectku\\vendor\\composer\\ClassLoader.php(433): Composer\\Autoload\\{closure}('C:\\\\xampp\\\\htdocs...')
+#7 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Providers\\FoundationServiceProvider.php(101): Composer\\Autoload\\ClassLoader->loadClass('Illuminate\\\\Foun...')
+#8 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Providers\\FoundationServiceProvider.php(70): Illuminate\\Foundation\\Providers\\FoundationServiceProvider->registerDumper()
+#9 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(764): Illuminate\\Foundation\\Providers\\FoundationServiceProvider->register()
+#10 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\ProviderRepository.php(75): Illuminate\\Foundation\\Application->register(Object(Illuminate\\Foundation\\Providers\\FoundationServiceProvider))
+#11 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(741): Illuminate\\Foundation\\ProviderRepository->load(Array)
+#12 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\RegisterProviders.php(17): Illuminate\\Foundation\\Application->registerConfiguredProviders()
+#13 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(261): Illuminate\\Foundation\\Bootstrap\\RegisterProviders->bootstrap(Object(Illuminate\\Foundation\\Application))
+#14 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(428): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#15 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(198): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#16 C:\\xampp\\htdocs\\projectku\\artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#17 {main} at C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\CliDumper.php:13)
+[stacktrace]
+#0 {main}
+"} 
+[2023-06-13 10:43:38] local.ERROR: During class fetch: Uncaught ErrorException: include(C:\xampp\htdocs\projectku\vendor\composer/../laravel/framework/src/Illuminate/Foundation/Concerns/ResolvesDumpSource.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\projectku\vendor\composer\ClassLoader.php:582
+Stack trace:
+#0 C:\xampp\htdocs\projectku\vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\HandleExceptions.php(254): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'include(C:\\xamp...', 'C:\\xampp\\htdocs...', 582)
+#1 C:\xampp\htdocs\projectku\vendor\composer\ClassLoader.php(582): Illuminate\Foundation\Bootstrap\HandleExceptions->Illuminate\Foundation\Bootstrap\{closure}(2, 'include(C:\\xamp...', 'C:\\xampp\\htdocs...', 582)
+#2 C:\xampp\htdocs\projectku\vendor\composer\ClassLoader.php(582): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\projectku\vendor\composer\ClassLoader.php(433): Composer\Autoload\{closure}('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\projectku\vendor\laravel\framework\src\Illuminate\Foundation\Console\CliDumper.php(13): Composer\Autoload\ClassLoader->loadClass('Illuminate\\Foun...')
+#5 C:\xampp\htdocs\projectku\vendor\composer\ClassLoader.php(582): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\projectku\vendor\composer\ClassLoader.php(433): Composer\Autoload\{closure}('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\projectku\vendor\laravel\framework\src\Illuminate\Foundation\Providers\FoundationServiceProvider.php(101): Composer\Autoload\ClassLoader->loadClass('Illuminate\\Foun...')
+#8 C:\xampp\htdocs\projectku\vendor\laravel\framework\src\Illuminate\Foundation\Providers\FoundationServiceProvider.php(70): Illuminate\Foundation\Providers\FoundationServiceProvider->registerDumper()
+#9 C:\xampp\htdocs\projectku\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(764): Illuminate\Foundation\Providers\FoundationServiceProvider->register()
+#10 C:\xampp\htdocs\projectku\vendor\laravel\framework\src\Illuminate\Foundation\ProviderRepository.php(75): Illuminate\Foundation\Application->register(Object(Illuminate\Foundation\Providers\FoundationServiceProvider))
+#11 C:\xampp\htdocs\projectku\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(741): Illuminate\Foundation\ProviderRepository->load(Array)
+#12 C:\xampp\htdocs\projectku\vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\RegisterProviders.php(17): Illuminate\Foundation\Application->registerConfiguredProviders()
+#13 C:\xampp\htdocs\projectku\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(261): Illuminate\Foundation\Bootstrap\RegisterProviders->bootstrap(Object(Illuminate\Foundation\Application))
+#14 C:\xampp\htdocs\projectku\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php(428): Illuminate\Foundation\Application->bootstrapWith(Array)
+#15 C:\xampp\htdocs\projectku\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php(198): Illuminate\Foundation\Console\Kernel->bootstrap()
+#16 Command line code(1): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 {main} {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): During class fetch: Uncaught ErrorException: include(C:\\xampp\\htdocs\\projectku\\vendor\\composer/../laravel/framework/src/Illuminate/Foundation/Concerns/ResolvesDumpSource.php): Failed to open stream: No such file or directory in C:\\xampp\\htdocs\\projectku\\vendor\\composer\\ClassLoader.php:582
+Stack trace:
+#0 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\HandleExceptions.php(254): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'include(C:\\\\xamp...', 'C:\\\\xampp\\\\htdocs...', 582)
+#1 C:\\xampp\\htdocs\\projectku\\vendor\\composer\\ClassLoader.php(582): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->Illuminate\\Foundation\\Bootstrap\\{closure}(2, 'include(C:\\\\xamp...', 'C:\\\\xampp\\\\htdocs...', 582)
+#2 C:\\xampp\\htdocs\\projectku\\vendor\\composer\\ClassLoader.php(582): include('C:\\\\xampp\\\\htdocs...')
+#3 C:\\xampp\\htdocs\\projectku\\vendor\\composer\\ClassLoader.php(433): Composer\\Autoload\\{closure}('C:\\\\xampp\\\\htdocs...')
+#4 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\CliDumper.php(13): Composer\\Autoload\\ClassLoader->loadClass('Illuminate\\\\Foun...')
+#5 C:\\xampp\\htdocs\\projectku\\vendor\\composer\\ClassLoader.php(582): include('C:\\\\xampp\\\\htdocs...')
+#6 C:\\xampp\\htdocs\\projectku\\vendor\\composer\\ClassLoader.php(433): Composer\\Autoload\\{closure}('C:\\\\xampp\\\\htdocs...')
+#7 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Providers\\FoundationServiceProvider.php(101): Composer\\Autoload\\ClassLoader->loadClass('Illuminate\\\\Foun...')
+#8 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Providers\\FoundationServiceProvider.php(70): Illuminate\\Foundation\\Providers\\FoundationServiceProvider->registerDumper()
+#9 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(764): Illuminate\\Foundation\\Providers\\FoundationServiceProvider->register()
+#10 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\ProviderRepository.php(75): Illuminate\\Foundation\\Application->register(Object(Illuminate\\Foundation\\Providers\\FoundationServiceProvider))
+#11 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(741): Illuminate\\Foundation\\ProviderRepository->load(Array)
+#12 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\RegisterProviders.php(17): Illuminate\\Foundation\\Application->registerConfiguredProviders()
+#13 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(261): Illuminate\\Foundation\\Bootstrap\\RegisterProviders->bootstrap(Object(Illuminate\\Foundation\\Application))
+#14 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(428): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#15 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(198): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#16 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#17 {main} at C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\CliDumper.php:13)
+[stacktrace]
+#0 {main}
+"} 
+[2023-06-13 17:28:54] local.ERROR: During class fetch: Uncaught ErrorException: include(C:\xampp\htdocs\projectku\vendor\composer/../laravel/framework/src/Illuminate/Foundation/Concerns/ResolvesDumpSource.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\projectku\vendor\composer\ClassLoader.php:582
+Stack trace:
+#0 C:\xampp\htdocs\projectku\vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\HandleExceptions.php(254): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'include(C:\\xamp...', 'C:\\xampp\\htdocs...', 582)
+#1 C:\xampp\htdocs\projectku\vendor\composer\ClassLoader.php(582): Illuminate\Foundation\Bootstrap\HandleExceptions->Illuminate\Foundation\Bootstrap\{closure}(2, 'include(C:\\xamp...', 'C:\\xampp\\htdocs...', 582)
+#2 C:\xampp\htdocs\projectku\vendor\composer\ClassLoader.php(582): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\projectku\vendor\composer\ClassLoader.php(433): Composer\Autoload\{closure}('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\projectku\vendor\laravel\framework\src\Illuminate\Foundation\Console\CliDumper.php(13): Composer\Autoload\ClassLoader->loadClass('Illuminate\\Foun...')
+#5 C:\xampp\htdocs\projectku\vendor\composer\ClassLoader.php(582): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\projectku\vendor\composer\ClassLoader.php(433): Composer\Autoload\{closure}('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\projectku\vendor\laravel\framework\src\Illuminate\Foundation\Providers\FoundationServiceProvider.php(101): Composer\Autoload\ClassLoader->loadClass('Illuminate\\Foun...')
+#8 C:\xampp\htdocs\projectku\vendor\laravel\framework\src\Illuminate\Foundation\Providers\FoundationServiceProvider.php(70): Illuminate\Foundation\Providers\FoundationServiceProvider->registerDumper()
+#9 C:\xampp\htdocs\projectku\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(764): Illuminate\Foundation\Providers\FoundationServiceProvider->register()
+#10 C:\xampp\htdocs\projectku\vendor\laravel\framework\src\Illuminate\Foundation\ProviderRepository.php(75): Illuminate\Foundation\Application->register(Object(Illuminate\Foundation\Providers\FoundationServiceProvider))
+#11 C:\xampp\htdocs\projectku\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(741): Illuminate\Foundation\ProviderRepository->load(Array)
+#12 C:\xampp\htdocs\projectku\vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\RegisterProviders.php(17): Illuminate\Foundation\Application->registerConfiguredProviders()
+#13 C:\xampp\htdocs\projectku\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(261): Illuminate\Foundation\Bootstrap\RegisterProviders->bootstrap(Object(Illuminate\Foundation\Application))
+#14 C:\xampp\htdocs\projectku\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php(428): Illuminate\Foundation\Application->bootstrapWith(Array)
+#15 C:\xampp\htdocs\projectku\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php(198): Illuminate\Foundation\Console\Kernel->bootstrap()
+#16 Command line code(1): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 {main} {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): During class fetch: Uncaught ErrorException: include(C:\\xampp\\htdocs\\projectku\\vendor\\composer/../laravel/framework/src/Illuminate/Foundation/Concerns/ResolvesDumpSource.php): Failed to open stream: No such file or directory in C:\\xampp\\htdocs\\projectku\\vendor\\composer\\ClassLoader.php:582
+Stack trace:
+#0 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\HandleExceptions.php(254): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'include(C:\\\\xamp...', 'C:\\\\xampp\\\\htdocs...', 582)
+#1 C:\\xampp\\htdocs\\projectku\\vendor\\composer\\ClassLoader.php(582): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->Illuminate\\Foundation\\Bootstrap\\{closure}(2, 'include(C:\\\\xamp...', 'C:\\\\xampp\\\\htdocs...', 582)
+#2 C:\\xampp\\htdocs\\projectku\\vendor\\composer\\ClassLoader.php(582): include('C:\\\\xampp\\\\htdocs...')
+#3 C:\\xampp\\htdocs\\projectku\\vendor\\composer\\ClassLoader.php(433): Composer\\Autoload\\{closure}('C:\\\\xampp\\\\htdocs...')
+#4 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\CliDumper.php(13): Composer\\Autoload\\ClassLoader->loadClass('Illuminate\\\\Foun...')
+#5 C:\\xampp\\htdocs\\projectku\\vendor\\composer\\ClassLoader.php(582): include('C:\\\\xampp\\\\htdocs...')
+#6 C:\\xampp\\htdocs\\projectku\\vendor\\composer\\ClassLoader.php(433): Composer\\Autoload\\{closure}('C:\\\\xampp\\\\htdocs...')
+#7 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Providers\\FoundationServiceProvider.php(101): Composer\\Autoload\\ClassLoader->loadClass('Illuminate\\\\Foun...')
+#8 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Providers\\FoundationServiceProvider.php(70): Illuminate\\Foundation\\Providers\\FoundationServiceProvider->registerDumper()
+#9 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(764): Illuminate\\Foundation\\Providers\\FoundationServiceProvider->register()
+#10 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\ProviderRepository.php(75): Illuminate\\Foundation\\Application->register(Object(Illuminate\\Foundation\\Providers\\FoundationServiceProvider))
+#11 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(741): Illuminate\\Foundation\\ProviderRepository->load(Array)
+#12 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\RegisterProviders.php(17): Illuminate\\Foundation\\Application->registerConfiguredProviders()
+#13 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(261): Illuminate\\Foundation\\Bootstrap\\RegisterProviders->bootstrap(Object(Illuminate\\Foundation\\Application))
+#14 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(428): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#15 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(198): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#16 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#17 {main} at C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\CliDumper.php:13)
+[stacktrace]
+#0 {main}
+"} 
+[2023-06-13 17:30:03] local.ERROR: During class fetch: Uncaught ErrorException: include(C:\xampp\htdocs\projectku\vendor\composer/../laravel/framework/src/Illuminate/Foundation/Concerns/ResolvesDumpSource.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\projectku\vendor\composer\ClassLoader.php:582
+Stack trace:
+#0 C:\xampp\htdocs\projectku\vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\HandleExceptions.php(254): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'include(C:\\xamp...', 'C:\\xampp\\htdocs...', 582)
+#1 C:\xampp\htdocs\projectku\vendor\composer\ClassLoader.php(582): Illuminate\Foundation\Bootstrap\HandleExceptions->Illuminate\Foundation\Bootstrap\{closure}(2, 'include(C:\\xamp...', 'C:\\xampp\\htdocs...', 582)
+#2 C:\xampp\htdocs\projectku\vendor\composer\ClassLoader.php(582): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\projectku\vendor\composer\ClassLoader.php(433): Composer\Autoload\{closure}('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\projectku\vendor\laravel\framework\src\Illuminate\Foundation\Console\CliDumper.php(13): Composer\Autoload\ClassLoader->loadClass('Illuminate\\Foun...')
+#5 C:\xampp\htdocs\projectku\vendor\composer\ClassLoader.php(582): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\projectku\vendor\composer\ClassLoader.php(433): Composer\Autoload\{closure}('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\projectku\vendor\laravel\framework\src\Illuminate\Foundation\Providers\FoundationServiceProvider.php(101): Composer\Autoload\ClassLoader->loadClass('Illuminate\\Foun...')
+#8 C:\xampp\htdocs\projectku\vendor\laravel\framework\src\Illuminate\Foundation\Providers\FoundationServiceProvider.php(70): Illuminate\Foundation\Providers\FoundationServiceProvider->registerDumper()
+#9 C:\xampp\htdocs\projectku\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(764): Illuminate\Foundation\Providers\FoundationServiceProvider->register()
+#10 C:\xampp\htdocs\projectku\vendor\laravel\framework\src\Illuminate\Foundation\ProviderRepository.php(75): Illuminate\Foundation\Application->register(Object(Illuminate\Foundation\Providers\FoundationServiceProvider))
+#11 C:\xampp\htdocs\projectku\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(741): Illuminate\Foundation\ProviderRepository->load(Array)
+#12 C:\xampp\htdocs\projectku\vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\RegisterProviders.php(17): Illuminate\Foundation\Application->registerConfiguredProviders()
+#13 C:\xampp\htdocs\projectku\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(261): Illuminate\Foundation\Bootstrap\RegisterProviders->bootstrap(Object(Illuminate\Foundation\Application))
+#14 C:\xampp\htdocs\projectku\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php(428): Illuminate\Foundation\Application->bootstrapWith(Array)
+#15 C:\xampp\htdocs\projectku\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php(198): Illuminate\Foundation\Console\Kernel->bootstrap()
+#16 C:\xampp\htdocs\projectku\artisan(35): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 {main} {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): During class fetch: Uncaught ErrorException: include(C:\\xampp\\htdocs\\projectku\\vendor\\composer/../laravel/framework/src/Illuminate/Foundation/Concerns/ResolvesDumpSource.php): Failed to open stream: No such file or directory in C:\\xampp\\htdocs\\projectku\\vendor\\composer\\ClassLoader.php:582
+Stack trace:
+#0 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\HandleExceptions.php(254): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'include(C:\\\\xamp...', 'C:\\\\xampp\\\\htdocs...', 582)
+#1 C:\\xampp\\htdocs\\projectku\\vendor\\composer\\ClassLoader.php(582): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->Illuminate\\Foundation\\Bootstrap\\{closure}(2, 'include(C:\\\\xamp...', 'C:\\\\xampp\\\\htdocs...', 582)
+#2 C:\\xampp\\htdocs\\projectku\\vendor\\composer\\ClassLoader.php(582): include('C:\\\\xampp\\\\htdocs...')
+#3 C:\\xampp\\htdocs\\projectku\\vendor\\composer\\ClassLoader.php(433): Composer\\Autoload\\{closure}('C:\\\\xampp\\\\htdocs...')
+#4 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\CliDumper.php(13): Composer\\Autoload\\ClassLoader->loadClass('Illuminate\\\\Foun...')
+#5 C:\\xampp\\htdocs\\projectku\\vendor\\composer\\ClassLoader.php(582): include('C:\\\\xampp\\\\htdocs...')
+#6 C:\\xampp\\htdocs\\projectku\\vendor\\composer\\ClassLoader.php(433): Composer\\Autoload\\{closure}('C:\\\\xampp\\\\htdocs...')
+#7 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Providers\\FoundationServiceProvider.php(101): Composer\\Autoload\\ClassLoader->loadClass('Illuminate\\\\Foun...')
+#8 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Providers\\FoundationServiceProvider.php(70): Illuminate\\Foundation\\Providers\\FoundationServiceProvider->registerDumper()
+#9 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(764): Illuminate\\Foundation\\Providers\\FoundationServiceProvider->register()
+#10 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\ProviderRepository.php(75): Illuminate\\Foundation\\Application->register(Object(Illuminate\\Foundation\\Providers\\FoundationServiceProvider))
+#11 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(741): Illuminate\\Foundation\\ProviderRepository->load(Array)
+#12 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\RegisterProviders.php(17): Illuminate\\Foundation\\Application->registerConfiguredProviders()
+#13 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(261): Illuminate\\Foundation\\Bootstrap\\RegisterProviders->bootstrap(Object(Illuminate\\Foundation\\Application))
+#14 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(428): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#15 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(198): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#16 C:\\xampp\\htdocs\\projectku\\artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#17 {main} at C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\CliDumper.php:13)
+[stacktrace]
+#0 {main}
+"} 
+[2023-06-13 17:34:48] local.ERROR: During class fetch: Uncaught ErrorException: include(C:\xampp\htdocs\projectku\vendor\composer/../laravel/framework/src/Illuminate/Foundation/Concerns/ResolvesDumpSource.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\projectku\vendor\composer\ClassLoader.php:582
+Stack trace:
+#0 C:\xampp\htdocs\projectku\vendor\composer\ClassLoader.php(582): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'include(C:\\xamp...', 'C:\\xampp\\htdocs...', 582)
+#1 C:\xampp\htdocs\projectku\vendor\composer\ClassLoader.php(582): include()
+#2 C:\xampp\htdocs\projectku\vendor\composer\ClassLoader.php(433): Composer\Autoload\{closure}('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\projectku\vendor\laravel\framework\src\Illuminate\Foundation\Console\CliDumper.php(13): Composer\Autoload\ClassLoader->loadClass('Illuminate\\Foun...')
+#4 C:\xampp\htdocs\projectku\vendor\composer\ClassLoader.php(582): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\projectku\vendor\composer\ClassLoader.php(433): Composer\Autoload\{closure}('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\projectku\vendor\laravel\framework\src\Illuminate\Foundation\Providers\FoundationServiceProvider.php(101): Composer\Autoload\ClassLoader->loadClass('Illuminate\\Foun...')
+#7 C:\xampp\htdocs\projectku\vendor\laravel\framework\src\Illuminate\Foundation\Providers\FoundationServiceProvider.php(70): Illuminate\Foundation\Providers\FoundationServiceProvider->registerDumper()
+#8 C:\xampp\htdocs\projectku\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(764): Illuminate\Foundation\Providers\FoundationServiceProvider->register()
+#9 C:\xampp\htdocs\projectku\vendor\laravel\framework\src\Illuminate\Foundation\ProviderRepository.php(75): Illuminate\Foundation\Application->register(Object(Illuminate\Foundation\Providers\FoundationServiceProvider))
+#10 C:\xampp\htdocs\projectku\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(741): Illuminate\Foundation\ProviderRepository->load(Array)
+#11 C:\xampp\htdocs\projectku\vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\RegisterProviders.php(17): Illuminate\Foundation\Application->registerConfiguredProviders()
+#12 C:\xampp\htdocs\projectku\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(261): Illuminate\Foundation\Bootstrap\RegisterProviders->bootstrap(Object(Illuminate\Foundation\Application))
+#13 C:\xampp\htdocs\projectku\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php(428): Illuminate\Foundation\Application->bootstrapWith(Array)
+#14 C:\xampp\htdocs\projectku\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php(198): Illuminate\Foundation\Console\Kernel->bootstrap()
+#15 C:\xampp\htdocs\projectku\artisan(35): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 {main} {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): During class fetch: Uncaught ErrorException: include(C:\\xampp\\htdocs\\projectku\\vendor\\composer/../laravel/framework/src/Illuminate/Foundation/Concerns/ResolvesDumpSource.php): Failed to open stream: No such file or directory in C:\\xampp\\htdocs\\projectku\\vendor\\composer\\ClassLoader.php:582
+Stack trace:
+#0 C:\\xampp\\htdocs\\projectku\\vendor\\composer\\ClassLoader.php(582): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'include(C:\\\\xamp...', 'C:\\\\xampp\\\\htdocs...', 582)
+#1 C:\\xampp\\htdocs\\projectku\\vendor\\composer\\ClassLoader.php(582): include()
+#2 C:\\xampp\\htdocs\\projectku\\vendor\\composer\\ClassLoader.php(433): Composer\\Autoload\\{closure}('C:\\\\xampp\\\\htdocs...')
+#3 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\CliDumper.php(13): Composer\\Autoload\\ClassLoader->loadClass('Illuminate\\\\Foun...')
+#4 C:\\xampp\\htdocs\\projectku\\vendor\\composer\\ClassLoader.php(582): include('C:\\\\xampp\\\\htdocs...')
+#5 C:\\xampp\\htdocs\\projectku\\vendor\\composer\\ClassLoader.php(433): Composer\\Autoload\\{closure}('C:\\\\xampp\\\\htdocs...')
+#6 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Providers\\FoundationServiceProvider.php(101): Composer\\Autoload\\ClassLoader->loadClass('Illuminate\\\\Foun...')
+#7 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Providers\\FoundationServiceProvider.php(70): Illuminate\\Foundation\\Providers\\FoundationServiceProvider->registerDumper()
+#8 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(764): Illuminate\\Foundation\\Providers\\FoundationServiceProvider->register()
+#9 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\ProviderRepository.php(75): Illuminate\\Foundation\\Application->register(Object(Illuminate\\Foundation\\Providers\\FoundationServiceProvider))
+#10 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(741): Illuminate\\Foundation\\ProviderRepository->load(Array)
+#11 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\RegisterProviders.php(17): Illuminate\\Foundation\\Application->registerConfiguredProviders()
+#12 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(261): Illuminate\\Foundation\\Bootstrap\\RegisterProviders->bootstrap(Object(Illuminate\\Foundation\\Application))
+#13 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(428): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#14 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(198): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#15 C:\\xampp\\htdocs\\projectku\\artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#16 {main} at C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\CliDumper.php:13)
+[stacktrace]
+#0 {main}
+"} 
+[2023-06-13 17:38:28] local.ERROR: During class fetch: Uncaught ErrorException: include(C:\xampp\htdocs\projectku\vendor\composer/../laravel/framework/src/Illuminate/Foundation/Concerns/ResolvesDumpSource.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\projectku\vendor\composer\ClassLoader.php:582
+Stack trace:
+#0 C:\xampp\htdocs\projectku\vendor\composer\ClassLoader.php(582): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'include(C:\\xamp...', 'C:\\xampp\\htdocs...', 582)
+#1 C:\xampp\htdocs\projectku\vendor\composer\ClassLoader.php(582): include()
+#2 C:\xampp\htdocs\projectku\vendor\composer\ClassLoader.php(433): Composer\Autoload\{closure}('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\projectku\vendor\laravel\framework\src\Illuminate\Foundation\Console\CliDumper.php(13): Composer\Autoload\ClassLoader->loadClass('Illuminate\\Foun...')
+#4 C:\xampp\htdocs\projectku\vendor\composer\ClassLoader.php(582): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\projectku\vendor\composer\ClassLoader.php(433): Composer\Autoload\{closure}('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\projectku\vendor\laravel\framework\src\Illuminate\Foundation\Providers\FoundationServiceProvider.php(101): Composer\Autoload\ClassLoader->loadClass('Illuminate\\Foun...')
+#7 C:\xampp\htdocs\projectku\vendor\laravel\framework\src\Illuminate\Foundation\Providers\FoundationServiceProvider.php(70): Illuminate\Foundation\Providers\FoundationServiceProvider->registerDumper()
+#8 C:\xampp\htdocs\projectku\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(764): Illuminate\Foundation\Providers\FoundationServiceProvider->register()
+#9 C:\xampp\htdocs\projectku\vendor\laravel\framework\src\Illuminate\Foundation\ProviderRepository.php(75): Illuminate\Foundation\Application->register(Object(Illuminate\Foundation\Providers\FoundationServiceProvider))
+#10 C:\xampp\htdocs\projectku\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(741): Illuminate\Foundation\ProviderRepository->load(Array)
+#11 C:\xampp\htdocs\projectku\vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\RegisterProviders.php(17): Illuminate\Foundation\Application->registerConfiguredProviders()
+#12 C:\xampp\htdocs\projectku\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(261): Illuminate\Foundation\Bootstrap\RegisterProviders->bootstrap(Object(Illuminate\Foundation\Application))
+#13 C:\xampp\htdocs\projectku\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php(428): Illuminate\Foundation\Application->bootstrapWith(Array)
+#14 C:\xampp\htdocs\projectku\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php(198): Illuminate\Foundation\Console\Kernel->bootstrap()
+#15 C:\xampp\htdocs\projectku\artisan(35): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 {main} {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): During class fetch: Uncaught ErrorException: include(C:\\xampp\\htdocs\\projectku\\vendor\\composer/../laravel/framework/src/Illuminate/Foundation/Concerns/ResolvesDumpSource.php): Failed to open stream: No such file or directory in C:\\xampp\\htdocs\\projectku\\vendor\\composer\\ClassLoader.php:582
+Stack trace:
+#0 C:\\xampp\\htdocs\\projectku\\vendor\\composer\\ClassLoader.php(582): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'include(C:\\\\xamp...', 'C:\\\\xampp\\\\htdocs...', 582)
+#1 C:\\xampp\\htdocs\\projectku\\vendor\\composer\\ClassLoader.php(582): include()
+#2 C:\\xampp\\htdocs\\projectku\\vendor\\composer\\ClassLoader.php(433): Composer\\Autoload\\{closure}('C:\\\\xampp\\\\htdocs...')
+#3 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\CliDumper.php(13): Composer\\Autoload\\ClassLoader->loadClass('Illuminate\\\\Foun...')
+#4 C:\\xampp\\htdocs\\projectku\\vendor\\composer\\ClassLoader.php(582): include('C:\\\\xampp\\\\htdocs...')
+#5 C:\\xampp\\htdocs\\projectku\\vendor\\composer\\ClassLoader.php(433): Composer\\Autoload\\{closure}('C:\\\\xampp\\\\htdocs...')
+#6 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Providers\\FoundationServiceProvider.php(101): Composer\\Autoload\\ClassLoader->loadClass('Illuminate\\\\Foun...')
+#7 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Providers\\FoundationServiceProvider.php(70): Illuminate\\Foundation\\Providers\\FoundationServiceProvider->registerDumper()
+#8 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(764): Illuminate\\Foundation\\Providers\\FoundationServiceProvider->register()
+#9 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\ProviderRepository.php(75): Illuminate\\Foundation\\Application->register(Object(Illuminate\\Foundation\\Providers\\FoundationServiceProvider))
+#10 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(741): Illuminate\\Foundation\\ProviderRepository->load(Array)
+#11 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\RegisterProviders.php(17): Illuminate\\Foundation\\Application->registerConfiguredProviders()
+#12 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(261): Illuminate\\Foundation\\Bootstrap\\RegisterProviders->bootstrap(Object(Illuminate\\Foundation\\Application))
+#13 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(428): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#14 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(198): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#15 C:\\xampp\\htdocs\\projectku\\artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#16 {main} at C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\CliDumper.php:13)
+[stacktrace]
+#0 {main}
+"} 
+[2023-06-13 17:38:52] local.ERROR: During class fetch: Uncaught ErrorException: include(C:\xampp\htdocs\projectku\vendor\composer/../laravel/framework/src/Illuminate/Foundation/Concerns/ResolvesDumpSource.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\projectku\vendor\composer\ClassLoader.php:582
+Stack trace:
+#0 C:\xampp\htdocs\projectku\vendor\composer\ClassLoader.php(582): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'include(C:\\xamp...', 'C:\\xampp\\htdocs...', 582)
+#1 C:\xampp\htdocs\projectku\vendor\composer\ClassLoader.php(582): include()
+#2 C:\xampp\htdocs\projectku\vendor\composer\ClassLoader.php(433): Composer\Autoload\{closure}('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\projectku\vendor\laravel\framework\src\Illuminate\Foundation\Console\CliDumper.php(13): Composer\Autoload\ClassLoader->loadClass('Illuminate\\Foun...')
+#4 C:\xampp\htdocs\projectku\vendor\composer\ClassLoader.php(582): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\projectku\vendor\composer\ClassLoader.php(433): Composer\Autoload\{closure}('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\projectku\vendor\laravel\framework\src\Illuminate\Foundation\Providers\FoundationServiceProvider.php(101): Composer\Autoload\ClassLoader->loadClass('Illuminate\\Foun...')
+#7 C:\xampp\htdocs\projectku\vendor\laravel\framework\src\Illuminate\Foundation\Providers\FoundationServiceProvider.php(70): Illuminate\Foundation\Providers\FoundationServiceProvider->registerDumper()
+#8 C:\xampp\htdocs\projectku\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(764): Illuminate\Foundation\Providers\FoundationServiceProvider->register()
+#9 C:\xampp\htdocs\projectku\vendor\laravel\framework\src\Illuminate\Foundation\ProviderRepository.php(75): Illuminate\Foundation\Application->register(Object(Illuminate\Foundation\Providers\FoundationServiceProvider))
+#10 C:\xampp\htdocs\projectku\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(741): Illuminate\Foundation\ProviderRepository->load(Array)
+#11 C:\xampp\htdocs\projectku\vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\RegisterProviders.php(17): Illuminate\Foundation\Application->registerConfiguredProviders()
+#12 C:\xampp\htdocs\projectku\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(261): Illuminate\Foundation\Bootstrap\RegisterProviders->bootstrap(Object(Illuminate\Foundation\Application))
+#13 C:\xampp\htdocs\projectku\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php(428): Illuminate\Foundation\Application->bootstrapWith(Array)
+#14 C:\xampp\htdocs\projectku\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php(198): Illuminate\Foundation\Console\Kernel->bootstrap()
+#15 Command line code(1): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 {main} {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): During class fetch: Uncaught ErrorException: include(C:\\xampp\\htdocs\\projectku\\vendor\\composer/../laravel/framework/src/Illuminate/Foundation/Concerns/ResolvesDumpSource.php): Failed to open stream: No such file or directory in C:\\xampp\\htdocs\\projectku\\vendor\\composer\\ClassLoader.php:582
+Stack trace:
+#0 C:\\xampp\\htdocs\\projectku\\vendor\\composer\\ClassLoader.php(582): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'include(C:\\\\xamp...', 'C:\\\\xampp\\\\htdocs...', 582)
+#1 C:\\xampp\\htdocs\\projectku\\vendor\\composer\\ClassLoader.php(582): include()
+#2 C:\\xampp\\htdocs\\projectku\\vendor\\composer\\ClassLoader.php(433): Composer\\Autoload\\{closure}('C:\\\\xampp\\\\htdocs...')
+#3 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\CliDumper.php(13): Composer\\Autoload\\ClassLoader->loadClass('Illuminate\\\\Foun...')
+#4 C:\\xampp\\htdocs\\projectku\\vendor\\composer\\ClassLoader.php(582): include('C:\\\\xampp\\\\htdocs...')
+#5 C:\\xampp\\htdocs\\projectku\\vendor\\composer\\ClassLoader.php(433): Composer\\Autoload\\{closure}('C:\\\\xampp\\\\htdocs...')
+#6 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Providers\\FoundationServiceProvider.php(101): Composer\\Autoload\\ClassLoader->loadClass('Illuminate\\\\Foun...')
+#7 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Providers\\FoundationServiceProvider.php(70): Illuminate\\Foundation\\Providers\\FoundationServiceProvider->registerDumper()
+#8 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(764): Illuminate\\Foundation\\Providers\\FoundationServiceProvider->register()
+#9 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\ProviderRepository.php(75): Illuminate\\Foundation\\Application->register(Object(Illuminate\\Foundation\\Providers\\FoundationServiceProvider))
+#10 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(741): Illuminate\\Foundation\\ProviderRepository->load(Array)
+#11 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\RegisterProviders.php(17): Illuminate\\Foundation\\Application->registerConfiguredProviders()
+#12 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(261): Illuminate\\Foundation\\Bootstrap\\RegisterProviders->bootstrap(Object(Illuminate\\Foundation\\Application))
+#13 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(428): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#14 C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(198): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#15 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#16 {main} at C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\CliDumper.php:13)
+[stacktrace]
+#0 {main}
+"} 
+[2023-06-13 17:43:00] local.ERROR: Trait "Illuminate\Foundation\Concerns\ResolvesDumpSource" not found {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Trait \"Illuminate\\Foundation\\Concerns\\ResolvesDumpSource\" not found at C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\CliDumper.php:13)
+[stacktrace]
+#0 {main}
+"} 
+[2023-06-13 17:43:06] local.ERROR: Trait "Illuminate\Foundation\Concerns\ResolvesDumpSource" not found {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Trait \"Illuminate\\Foundation\\Concerns\\ResolvesDumpSource\" not found at C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\CliDumper.php:13)
+[stacktrace]
+#0 {main}
+"} 
+[2023-06-13 17:48:53] local.ERROR: Trait "Illuminate\Foundation\Concerns\ResolvesDumpSource" not found {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Trait \"Illuminate\\Foundation\\Concerns\\ResolvesDumpSource\" not found at C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\CliDumper.php:13)
+[stacktrace]
+#0 {main}
+"} 
+[2023-06-13 17:58:52] local.ERROR: Trait "Illuminate\Foundation\Concerns\ResolvesDumpSource" not found {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Trait \"Illuminate\\Foundation\\Concerns\\ResolvesDumpSource\" not found at C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\CliDumper.php:13)
+[stacktrace]
+#0 {main}
+"} 
+[2023-06-13 18:08:52] local.ERROR: Trait "Illuminate\Foundation\Concerns\ResolvesDumpSource" not found {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Trait \"Illuminate\\Foundation\\Concerns\\ResolvesDumpSource\" not found at C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\CliDumper.php:13)
+[stacktrace]
+#0 {main}
+"} 
+[2023-06-13 18:18:52] local.ERROR: Trait "Illuminate\Foundation\Concerns\ResolvesDumpSource" not found {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Trait \"Illuminate\\Foundation\\Concerns\\ResolvesDumpSource\" not found at C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\CliDumper.php:13)
+[stacktrace]
+#0 {main}
+"} 
+[2023-06-13 18:28:52] local.ERROR: Trait "Illuminate\Foundation\Concerns\ResolvesDumpSource" not found {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Trait \"Illuminate\\Foundation\\Concerns\\ResolvesDumpSource\" not found at C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\CliDumper.php:13)
+[stacktrace]
+#0 {main}
+"} 
+[2023-06-13 18:38:52] local.ERROR: Trait "Illuminate\Foundation\Concerns\ResolvesDumpSource" not found {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Trait \"Illuminate\\Foundation\\Concerns\\ResolvesDumpSource\" not found at C:\\xampp\\htdocs\\projectku\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\CliDumper.php:13)
+[stacktrace]
+#0 {main}
+"} 
